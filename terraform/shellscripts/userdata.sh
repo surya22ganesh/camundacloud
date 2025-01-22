@@ -43,21 +43,30 @@ sudo apt-get install tree -y
 # maven
 sudo apt-get install maven -y
 
-# SonarQube
+# unzip
+sudo apt-get install unzip -y
 
-# cd /opt
-# chmod 777 .
+# SonarQube old
 # wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.6.0.92116.zip?_gl=1*uyzwzb*_gcl_au*MjU4MTU5NTYwLjE3MjQ0MDg3NTE.*_ga*NTg3OTQ5NDIwLjE3MjQ0MDg3NTE.*_ga_9JZ0GZ5TC6*MTcyNTY4NzI0MC44LjAuMTcyNTY4NzI0MC42MC4wLjA.
+# sonarscanner old
+# wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-linux-x64.zip?_gl=1*mglqgf*_gcl_au*MjU4MTU5NTYwLjE3MjQ0MDg3NTE.*_ga*NTg3OTQ5NDIwLjE3MjQ0MDg3NTE.*_ga_9JZ0GZ5TC6*MTcyNTY4NzI0MC44LjEuMTcyNTY5MDEzOC42MC4wLjA.
+
+# SonarQube
+# cd /opt
+# mkdir sonarqube
+# cd sonarqube
+# chmod 777 .
+# wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.1.0.102122.zip?_gl=1*7mgt9z*_gcl_au*MzQ3ODc4MTQ2LjE3MzMzOTE2NjQ.*_ga*MTcyODc0ODQyMy4xNzMzMzkxNjY0*_ga_9JZ0GZ5TC6*MTczNzU0MTA4NS42LjEuMTczNzU0ODc3OS41My4wLjA.
 # mv * sonarqube.zip
 # unzip sonarqube.zip 
 # rm sonarqube.zip
 # mv * sonarqube
-# cd /opt
+# cd /opt/sonarqube
 # sudo chown -R ubuntu:ubuntu sonarqube/
-# cd /sonarqube/bin/linux-x86-64
-# # su ubuntu
-# # sh sonar.sh start
-# # sh sonar.sh status
+# cd /opt/sonarqube/sonarqube/bin/linux-x86-64
+# su ubuntu
+# sh sonar.sh start
+# sh sonar.sh status
 
 # SONNAR SCANNER
 # sudo -i
@@ -65,7 +74,7 @@ sudo apt-get install maven -y
 # mkdir sonarscanner
 # cd sonarscanner
 # chmod 777 sonarscanner
-# wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-linux-x64.zip?_gl=1*mglqgf*_gcl_au*MjU4MTU5NTYwLjE3MjQ0MDg3NTE.*_ga*NTg3OTQ5NDIwLjE3MjQ0MDg3NTE.*_ga_9JZ0GZ5TC6*MTcyNTY4NzI0MC44LjEuMTcyNTY5MDEzOC42MC4wLjA.
+# wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.2.1.4610-linux-x64.zip?_gl=1*kqak4c*_gcl_au*MzQ3ODc4MTQ2LjE3MzMzOTE2NjQ.*_ga*MTcyODc0ODQyMy4xNzMzMzkxNjY0*_ga_9JZ0GZ5TC6*MTczNzU0MTA4NS42LjEuMTczNzU0NjUwNS42MC4wLjA.
 # mv * sonarscanner.zip
 # unzip sonarscanner.zip
 # rm sonarscanner.zip
