@@ -79,3 +79,7 @@ sudo apt-get install unzip -y
 # unzip sonarscanner.zip
 # rm sonarscanner.zip
 # mv * sonarscanner
+
+# sonarQube Docker container
+
+docker run -dit --name sonarqube -p 9000:9000 sonarqube:lts-community
